@@ -7,7 +7,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Custom styles */
         .gradient-bg {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
@@ -43,7 +42,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="gradient-bg text-white pt-24 pb-20">
         <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-10 md:mb-0">
@@ -67,7 +65,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Tentang Saya</h2>
@@ -108,7 +105,6 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Keahlian Teknis</h2>
@@ -205,13 +201,13 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+
     <section id="projects" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Proyek Terbaru</h2>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
+
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/c1f01c6b-1995-4f04-9f8e-b17f238dfb9a.png" alt="Dashboard aplikasi e-commerce dengan analitik penjualan dan grafik interaktif" class="w-full h-48 object-cover" />
                     <div class="p-6">
@@ -226,7 +222,7 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5a72b19e-6d28-4f68-992e-bd13bf4491ff.png" alt="Antarmuka mobile app kesehatan dengan fitur tracking dan dashboard kesehatan" class="w-full h-48 object-cover" />
                     <div class="p-6">
@@ -241,7 +237,6 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8bbd51aa-4abd-4fcf-861d-790e18bb875c.png" alt="Sistem manajemen konten enterprise dengan dashboard admin yang modern" class="w-full h-48 object-cover" />
                     <div class="p-6">
@@ -265,7 +260,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+
     <section id="contact" class="py-20 bg-gray-50">
         <div class="container mx-auto px-6">
             <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Hubungi Saya</h2>
@@ -348,7 +343,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+
     <footer class="bg-gray-900 text-white py-12">
         <div class="container mx-auto px-6">
             <div class="text-center">
@@ -375,7 +370,6 @@
         </div>
     </footer>
 
-    <!-- JavaScript -->
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -391,12 +385,12 @@
             });
         });
 
-        // Mobile menu toggle (simplified)
+
         document.querySelector('button').addEventListener('click', function() {
             alert('Menu mobile akan ditampilkan di sini');
         });
 
-        // Animate skill bars on scroll
+
         function animateSkillBars() {
             const skillBars = document.querySelectorAll('.skill-bar');
             skillBars.forEach(bar => {
@@ -407,7 +401,7 @@
             });
         }
 
-        // Intersection Observer for skill bars animation
+
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
